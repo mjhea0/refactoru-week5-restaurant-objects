@@ -10,8 +10,7 @@ $(function() {
 	}
 
 
-	FoodItem.prototype.toString = function()
-	{
+	FoodItem.prototype.toString = function() {
 		return ""+this.foodName+"s have "+this.calories+" calories and can be consumed on a "+this.diet+" diet."
 	}
  

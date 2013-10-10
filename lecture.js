@@ -1,14 +1,13 @@
-// Object-oriented programming is the design of software using a 
+// 1. Object-oriented programming is the design of software using a 
 
-* collection of cooperating objects
-	- each object has its own set of data
-	- each object has its own functions (methods)
-	- objects can 'interact'
+// 	collection of cooperating objects
+// 	- each object has its own set of data
+// 	- each object has its own functions (methods)
+// 	- objects can 'interact'
 
-// as opposed to a 
-
-* collection of functions
-* a list of instructions
+// 	as opposed to a 
+// 	-collection of functions
+// 	-a list of instructions
 
 
 
@@ -23,7 +22,8 @@ var monk2 = {
 };
 
 
-// lots of global functions that take monk as an argument is awkward
+// 2. lots of global functions that take monk as an argument is awkward
+
 function meditate(monk) {
 	var om = 'Om';
 	for(var i=0; i<monk.yearsMeditating; i++) {
@@ -48,28 +48,7 @@ function getOlder(monk) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// methods
+// 3. methods
 var monk1 = {
 	age: 39,
 	yearsMeditating: 20,
@@ -93,27 +72,9 @@ var monk2 = {
 };
 
 monk1.meditate();
-monk1.meditate.call(monk2);
+monk1.meditate.call(monk2); //using call is a bit of a hack
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 4. OO
 
 var Person = function() {};
 var raine = new Person();
