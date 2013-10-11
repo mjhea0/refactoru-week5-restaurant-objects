@@ -26,6 +26,7 @@ Drink = (name, description, items) ->
   @name = name
   @description = description
   @items = items
+  this
 
 Drink::toString = ->
   itemsArr = []
