@@ -121,7 +121,7 @@
       platesToStringArr.push(this.plates[i].toString());
       i++;
     }
-    return "This order contains " + this.plates.length + " plates: " + platesArr.join(", ") + ".\n" + platesToStringArr.join("\n\n");
+    return "This order contains " + this.plates.length + " plates: " + platesArr.join(" ") + ".\n" + platesToStringArr.join("\n\n");
   };
 
   Menu = function(plates) {
@@ -142,7 +142,7 @@
       platesToStringArr.push(this.plates[i].toString());
       i++;
     }
-    return "The menu contains " + this.plates.length + " plates: " + platesArr.join(", ") + ".\n" + platesToStringArr.join("\n\n");
+    return "The menu contains " + this.plates.length + " plates: " + platesArr.join(" ") + ".\n" + platesToStringArr.join("\n\n");
   };
 
   Restaurant = function(name, description, menu) {
